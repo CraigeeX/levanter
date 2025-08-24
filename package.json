@@ -1,4 +1,29 @@
 {
+  "name": "ciara-iv",
+  "version": "1.0.0",
+  "description": "CIARA-IV WhatsApp bot (minimalistic, deploy-anywhere)",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "lint": "echo 'No linter configured'"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "dependencies": {
+    "@adiwajshing/baileys": "^6.7.8",
+    "dotenv": "^16.4.5",
+    "pino": "^9.5.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}
+{
   "name": "levanter",
   "version": "3.5.2",
   "description": "",
